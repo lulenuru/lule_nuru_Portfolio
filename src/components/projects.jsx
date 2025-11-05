@@ -1,77 +1,108 @@
-import { Code2, Github, ExternalLink } from "lucide-react";
+import { Github, ArrowRight } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce website with shopping cart, product filters, and checkout functionality.',
-      tech: ['React', 'Tailwind CSS', 'Redux', 'REST API'],
-      github: '#',
-      live: '#'
+      title: "Karehub",
+      description:
+        "A mobile-first health platform connecting users with mental health support groups, professionals, and resources. Built with React Native and Django REST Framework.",
+      tech: ["React Native", "Django", "REST API", "Tailwind CSS"],
+      link: "https://github.com/lulenuru/karehub",
     },
     {
-      title: 'Weather Dashboard',
-      description: 'Real-time weather application with location search, 5-day forecast, and beautiful UI.',
-      tech: ['React', 'OpenWeather API', 'Chart.js'],
-      github: '#',
-      live: '#'
+      title: "Budget Miles",
+      description:
+        "A fuel and expense tracking app that helps users manage vehicle costs efficiently. Backend built in Django and frontend with React Native.",
+      tech: ["React Native", "Django", "SQLite", "Axios"],
+      link: "https://github.com/lulenuru/budget-miles",
     },
     {
-      title: 'Task Management App',
-      description: 'Productivity app with drag-and-drop functionality, task categories, and local storage.',
-      tech: ['React', 'Vite', 'Tailwind CSS', 'DnD Kit'],
-      github: '#',
-      live: '#'
-    }
+      title: "Dental Clinic Management System",
+      description:
+        "A comprehensive web platform for managing dental clinic operations — covering appointments, billing, inventory, and staff workflows.",
+      tech: ["Django", "React", "PostgreSQL", "Bootstrap"],
+      link: "https://github.com/lulenuru/dental-clinic-system",
+    },
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex items-center py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
+    <section
+      id="projects"
+      className="relative min-h-screen flex items-center py-20 
+                 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 
+                 overflow-hidden"
+    >
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f12_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f12_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+
+        {/* Glowing orbs */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-100">
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="bg-white/10 backdrop-blur-md border border-white/20 
+                         p-6 rounded-xl shadow-lg hover:shadow-blue-500/40 
+                         transition-all duration-500 group"
             >
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center">
-                <Code2 className="h-20 w-20 text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, techIdx) => (
-                    <span
-                      key={techIdx}
-                      className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
+              <h3 className="text-2xl font-bold text-blue-400 mb-4">
+                {project.title}
+              </h3>
+              <p className="text-gray-300 mb-4 leading-relaxed">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {project.tech.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1 bg-blue-500/10 border border-blue-500/30 
+                               text-blue-200 rounded-full text-sm"
                   >
-                    <Github className="h-5 w-5 mr-1" />
-                    Code
-                  </a>
-                  <a
-                    href={project.live}
-                    className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
-                  >
-                    <ExternalLink className="h-5 w-5 mr-1" />
-                    Live
-                  </a>
-                </div>
+                    {tech}
+                  </span>
+                ))}
               </div>
+
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 
+                           font-medium transition-all duration-300 group-hover:translate-x-1"
+              >
+                View Project
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </div>
           ))}
+        </div>
+
+        {/* Optional GitHub link or CTA */}
+        <div className="text-center mt-12">
+          <a
+            href="https://github.com/lulenuru"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 
+                       text-white font-semibold rounded-xl hover:bg-blue-700 
+                       transition-all duration-300 hover:scale-105 shadow-lg"
+          >
+            <Github className="h-5 w-5" />
+            View More on GitHub
+          </a>
         </div>
       </div>
     </section>
