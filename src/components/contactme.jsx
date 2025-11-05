@@ -40,25 +40,25 @@ export const Contact = () => {
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
               >
                 <Mail className="h-6 w-6 mr-3" />
-                your.email@example.com
+                lulenuru21@gmail.com
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/lulenuru"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
               >
                 <Github className="h-6 w-6 mr-3" />
-                github.com/yourusername
+                github.com/lulenuru
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/lule-nuru-956b77303"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
               >
                 <Linkedin className="h-6 w-6 mr-3" />
-                linkedin.com/in/yourusername
+                linkedin.com/in/lulenuru
               </a>
             </div>
           </div>
