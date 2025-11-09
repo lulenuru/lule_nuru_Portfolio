@@ -3,11 +3,11 @@ import { Github, ArrowRight } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "Karehub",
+      title: "Clinic Data Analysis & Performance Reporting",
       description:
-        "A mobile-first health platform connecting users with mental health support groups, professionals, and resources. Built with React Native and Django REST Framework.",
-      tech: ["React Native", "Django", "REST API", "Tailwind CSS"],
-      link: "https://github.com/lulenuru/karehub",
+        "Monthly data analysis work conducted at Abii Clinic using the Clinic Masters system. I export patient and service data to Excel, clean and transform datasets, and analyze clinic performance metrics such as patient flow, service utilization, and revenue trends. The insights are summarized into performance reports shared with management for decision-making.",
+      tech: ["Excel", "Clinic Masters", "Data Analysis", "Reporting"],
+      link: "https://github.com/lulenuru", // optional – you can replace with a real dashboard/report if available
     },
     {
       title: "Budget Miles",
