@@ -7,7 +7,7 @@ export const Projects = () => {
       description:
         "Monthly data analysis work conducted at Abii Clinic using the Clinic Masters system. I export patient and service data to Excel, clean and transform datasets, and analyze clinic performance metrics such as patient flow, service utilization, and revenue trends. The insights are summarized into performance reports shared with management for decision-making.",
       tech: ["Excel", "Clinic Masters", "Data Analysis", "Reporting"],
-      link: "https://github.com/lulenuru", // optional – you can replace with a real dashboard/report if available
+      link: "https://github.com/lulenuru", 
     },
     {
       title: "Budget Miles",
@@ -17,11 +17,11 @@ export const Projects = () => {
       link: "https://github.com/lulenuru/budget-miles",
     },
     {
-      title: "Dental Clinic Management System",
+      title: "Maven Cloud Limited – Customer Experience Data Analysis",
       description:
-        "A comprehensive web platform for managing dental clinic operations — covering appointments, billing, inventory, and staff workflows.",
-      tech: ["Django", "React", "PostgreSQL", "Bootstrap"],
-      link: "https://github.com/lulenuru/dental-clinic-system",
+        "Maven Cloud Limited, a call service provider, aimed to leverage its existing records to uncover insights that could improve customer experience and operational performance. Using two weeks of call data, I performed exploratory data analysis with Python to identify key factors affecting client satisfaction and predict future trends. The findings provided actionable insights to guide service improvements and increase profitability.",
+      tech: ["Python", "Excel", "Pandas", "Data Visualization", "EDA"],
+      link: "https://lulenuru.github.io/lule_nuru_portfolio/docs/assets/index-NYyHLHNz.js/", 
     },
   ];
 
@@ -90,7 +90,6 @@ export const Projects = () => {
           ))}
         </div>
 
-        {/* Optional GitHub link or CTA */}
         <div className="text-center mt-12">
           <a
             href="https://github.com/lulenuru"
