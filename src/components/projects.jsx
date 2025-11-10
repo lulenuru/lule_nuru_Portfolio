@@ -22,7 +22,7 @@ export const Projects = () => {
       description:
         "Maven Cloud Limited, a call service provider, aimed to leverage its existing records to uncover insights that could improve customer experience and operational performance. Using two weeks of call data, I performed exploratory data analysis with Python to identify key factors affecting client satisfaction and predict future trends. The findings provided actionable insights to guide service improvements and increase profitability.",
       tech: ["Python", "Excel", "Pandas", "Data Visualization", "EDA"],
-      link: "https://github.com/lulenuru/lule_nuru_Portfolio/raw/main/lule%20nuru.pptx.pdf",
+      link: "https://github.com/lulenuru/lule_nuru_Portfolio/blob/main/lule%20nuru.pptx.pdf",
     },
   ];
 
