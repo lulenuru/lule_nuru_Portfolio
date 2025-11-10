@@ -3,25 +3,26 @@ import { Github, ArrowRight } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "Clinic Data Analysis & Performance Reporting",
+      title: "Budget Miles",
+      description:
+        "A fuel and expense tracking app that helps users manage vehicle costs efficiently and transforms fuel spending into auditable, cost-optimized data and smart cost prediction for drivers. The companion B2B web portal gives corporate clients three-tiered hierarchical control over their network for real-time sales audit and dynamic price management. Backend built in Django and frontend with React Native.",
+      tech: ["React Native", "React", "Django", "SQLite", "Axios"],
+      link: "https://github.com/lulenuru/budget-miles",
+      
+    },
+    {
+      title: "Abii Clinic Data Analysis & Performance Reporting",
       description:
         "Monthly data analysis work conducted at Abii Clinic using the Clinic Masters system. I export patient and service data to Excel, clean and transform datasets, and analyze clinic performance metrics such as patient flow, service utilization, and revenue trends. The insights are summarized into performance reports shared with management for decision-making.",
       tech: ["Excel", "Clinic Masters", "Data Analysis", "Reporting"],
       link: "https://github.com/lulenuru", 
     },
     {
-      title: "Budget Miles",
-      description:
-        "A fuel and expense tracking app that helps users manage vehicle costs efficiently and transforms fuel spending into auditable, cost-optimized data and smart cost prediction for drivers. The companion B2B web portal gives corporate clients three-tiered hierarchical control over their network for real-time sales audit and dynamic price management. Backend built in Django and frontend with React Native.",
-      tech: ["React Native", "React", "Django", "SQLite", "Axios"],
-      link: "https://github.com/lulenuru/budget-miles",
-    },
-    {
       title: "Maven Cloud Limited – Customer Experience Data Analysis",
       description:
         "Maven Cloud Limited, a call service provider, aimed to leverage its existing records to uncover insights that could improve customer experience and operational performance. Using two weeks of call data, I performed exploratory data analysis with Python to identify key factors affecting client satisfaction and predict future trends. The findings provided actionable insights to guide service improvements and increase profitability.",
       tech: ["Python", "Excel", "Pandas", "Data Visualization", "EDA"],
-      link: "https://lulenuru.github.io/lule_nuru_portfolio/docs/assets/index-NYyHLHNz.js/", 
+      link: "https://lulenuru.github.io/lule_nuru_Portfolio/lule_nuru.pptx.pdf",
     },
   ];
 
@@ -77,15 +78,16 @@ export const Projects = () => {
               </div>
 
               <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 
-                           font-medium transition-all duration-300 group-hover:translate-x-1"
-              >
-                View Project
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+  href={project.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 
+             font-medium transition-all duration-300 group-hover:translate-x-1"
+>
+  {project.title.includes("Maven Cloud") ? "View Report" : "View Project"}
+  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+</a>
+
             </div>
           ))}
         </div>
