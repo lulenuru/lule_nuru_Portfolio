@@ -12,8 +12,8 @@ export const Projects = () => {
     {
       title: "Budget Miles",
       description:
-        "A fuel and expense tracking app that helps users manage vehicle costs efficiently. Backend built in Django and frontend with React Native.",
-      tech: ["React Native", "Django", "SQLite", "Axios"],
+        "A fuel and expense tracking app that helps users manage vehicle costs efficiently and transforms fuel spending into auditable, cost-optimized data and smart cost prediction for drivers. The companion B2B web portal gives corporate clients three-tiered hierarchical control over their network for real-time sales audit and dynamic price management. Backend built in Django and frontend with React Native.",
+      tech: ["React Native", "React", "Django", "SQLite", "Axios"],
       link: "https://github.com/lulenuru/budget-miles",
     },
     {
