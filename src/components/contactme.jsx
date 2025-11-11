@@ -90,7 +90,7 @@ export const Contact = () => {
                        p-6 rounded-lg shadow-lg hover:shadow-blue-500/30 
                        transition-all duration-300"
           >
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form action="https://formspree.io/f/mzzybrwe" method="POST" onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-200 mb-1">
                   Name
