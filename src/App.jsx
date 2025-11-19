@@ -1,5 +1,6 @@
 import { About } from "./components/about";
-import { Contact } from "./components/contactme";
+import ContactForm from "./components/contactme";
+// import { Contact } from "./components/contactme";
 import { Home } from "./components/homepage";
 import { Navbar } from "./components/navbar";
 import { Projects } from "./components/projects";
@@ -13,7 +14,7 @@ export default function App() {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+      <ContactForm />
       <footer />
     </div>
   );
