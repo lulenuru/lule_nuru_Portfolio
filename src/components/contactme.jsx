@@ -40,13 +40,15 @@ const ContactForm = () => {
   return (
     <section
       id="contact"
-      className="py-20 bg-gray-900 text-white relative overflow-hidden"
+      className="relative min-h-screen flex items-center py-20 
+                 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 
+                 overflow-hidden"
     >
       {/* Background glow */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-blue-900/20 to-black/40 blur-3xl"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-        <h2 className="text-4xl font-bold mb-12 text-center text-indigo-400">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-100">
           Get In Touch
         </h2>
 
