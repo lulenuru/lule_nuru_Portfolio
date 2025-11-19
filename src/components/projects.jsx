@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Github, ArrowRight } from "lucide-react";
+// import { motion, AnimatePresence } from "framer-motion";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Projects = () => {
