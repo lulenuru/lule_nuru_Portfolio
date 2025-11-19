@@ -23,13 +23,13 @@ export const About = () => {
           {/* Left side text */}
           <div className="space-y-6 text-gray-300">
             <p className="text-lg leading-relaxed">
-              I'm a Frontend Developer and Data Analyst passionate about creating engaging, efficient, and data-informed digital experiences. I specialize in building mobile applications with React Native and web applications with React, focusing on clean design, smooth performance, and intuitive user interfaces.
+              I am a versatile professional with a dual focus on Frontend Development and Data Analysis, driven by the goal of creating efficient and data-informed digital solutions.
             </p>
             <p className="text-lg leading-relaxed">
-              While frontend is my core strength, I also work with Python and Django REST Framework to build and integrate supportive backends that power dynamic and scalable applications. My experience in data analysis — using tools like Python, SQL, and Excel — allows me to bring an analytical perspective to development, turning data into insights that drive smarter design and functionality.
+              I'm a Frontend Developer skilled in React and React Native for creating responsive UIs. My experience extends to utilizing Python/Django Restframework to integrate and support robust backends.
             </p>
             <p className="text-lg leading-relaxed">
-              I’m constantly exploring new technologies, UI/UX trends, and project management principles to strengthen my ability to lead and deliver successful projects from concept to deployment. When I’m not coding or analyzing data, I enjoy contributing to open-source projects and sharing knowledge with the developer community.
+              I leverage Python, Excel and Power BI to analyze complex data, translating findings into actionable insights that directly inform smarter application design and functionality.
             </p>
           </div>
 

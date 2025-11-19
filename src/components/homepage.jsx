@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Mail, Github, Linkedin, ArrowRight, Download, MapPin } from "lucide-react";
-import nuruprofpic from '../assets/images/nuruprofpic.jpeg';
+import nuruprofpic from '../assets/images/nuru1.jpg';
+import myResume from '../assets/files/LuleNuruResume.pdf';
 
 export const Home = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -36,7 +37,7 @@ export const Home = () => {
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                <span className="text-gray-300">Hi, I'm</span>
+                <span className="text-gray-400">Hi, I'm</span>
                 <br />
                 <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-400 bg-clip-text text-transparent">
                   Lule Nuru
@@ -57,13 +58,13 @@ export const Home = () => {
             </p>
             
             {/* Description */}
-            <p className="text-lg text-gray-500 leading-relaxed">
+            <p className="text-lg text-gray-400 leading-relaxed">
               I build beautiful, responsive, and user-friendly mobile and web applications using modern technologies. Transforming ideas and data into elegant digital experiences.
             </p>
 
             {/* Tech Stack */}
             <div className="flex flex-wrap justify-center lg:justify-start items-center gap-3">
-              <span className="text-gray-500 text-sm">Tech Stack:</span>
+              <span className="text-gray-400 text-sm">Tech Stack:</span>
               {['React', 'JavaScript', 'Tailwind CSS', 'Vite', 'Git'].map((tech) => (
                 <span 
                   key={tech} 
@@ -75,30 +76,50 @@ export const Home = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
-              <a
-                href="#projects"
-                className="group relative px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105"
-              >
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  View My Work
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </a>
-              
-              <a
-                href="#contact"
-                className="group px-8 py-4 border-2 border-blue-500/50 text-blue-400 font-semibold rounded-xl hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 flex items-center justify-center gap-2"
-              >
-                Let's Talk
-                <Mail className="h-5 w-5 group-hover:rotate-12 transition-transform" />
-              </a>
-            </div>
+           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+
+  {/* Resume NOW the highlighted blue button */}
+  <a
+  href={myResume}
+  download="LuleNuruResume.pdf"
+  className="group relative px-10 py-5 bg-blue-600 text-white font-semibold text-lg rounded-xl overflow-hidden 
+             transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 flex 
+             items-center justify-center gap-3"
+>
+  <span className="relative z-10 flex items-center justify-center gap-3">
+    Resume
+    <Download className="h-6 w-6 group-hover:rotate-12 transition-transform" />
+  </span>
+
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-0 
+                  group-hover:opacity-100 transition-opacity"></div>
+</a>
+
+
+
+  {/* View My Work NOW the outlined button */}
+  <a
+    href="#projects"
+    className="group px-8 py-4 border-2 border-blue-500/50 text-blue-400 font-semibold rounded-xl hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 flex items-center justify-center gap-2"
+  >
+    View My Work
+    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+  </a>
+
+  <a
+    href="#contact"
+    className="group px-8 py-4 border-2 border-blue-500/50 text-blue-400 font-semibold rounded-xl hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 flex items-center justify-center gap-2"
+  >
+    Let's Talk
+    <Mail className="h-5 w-5 group-hover:rotate-12 transition-transform" />
+  </a>
+
+</div>
+
 
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start items-center gap-4 pt-2">
-              <span className="text-gray-500 text-sm">Connect:</span>
+              <span className="text-gray-400 text-sm">Connect:</span>
               <div className="flex gap-3">
                 <a
                   href="https://github.com/lulenuru"
@@ -118,13 +139,13 @@ export const Home = () => {
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
-                <a
-                  href="lulenuru@example.com"
+                {/* <a
+                  href="lulenuru21@gmail.com"
                   className="group p-3 bg-white/5 hover:bg-blue-600 text-gray-400 hover:text-white rounded-lg transition-all duration-300 hover:scale-110 border border-white/10 hover:border-blue-500"
                   aria-label="Email Contact"
                 >
                   <Mail className="h-5 w-5" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
