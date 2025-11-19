@@ -26,7 +26,7 @@ export const About = () => {
               I am a versatile professional with a dual focus on Frontend Development and Data Analysis, driven by the goal of creating efficient and data-informed digital solutions.
             </p>
             <p className="text-lg leading-relaxed">
-              I'm a Frontend Developer skilled in React and React Native for creating responsive UIs. My experience extends to utilizing Python/Django Restframework to integrate and support robust backends.
+              I'm skilled in React and React Native for creating responsive UIs. My experience extends to utilizing Python/Django Restframework to integrate and support robust backends.
             </p>
             <p className="text-lg leading-relaxed">
               I leverage Python, Excel and Power BI to analyze complex data, translating findings into actionable insights that directly inform smarter application design and functionality.
