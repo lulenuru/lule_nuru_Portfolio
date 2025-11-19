@@ -51,7 +51,7 @@ export const About = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-blue-400 mr-2">▹</span>
-                <span>Interests: Data analysis, UI/UX Design, Project Management</span>
+                <span>Interests: Data analysis, Product Design, Project/ Product Management</span>
               </li>
             </ul>
           </div>
