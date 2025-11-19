@@ -65,7 +65,7 @@ export const Home = () => {
             {/* Tech Stack */}
             <div className="flex flex-wrap justify-center lg:justify-start items-center gap-3">
               <span className="text-gray-400 text-sm">Tech Stack:</span>
-              {['React', 'JavaScript', 'Tailwind CSS', 'Vite', 'Git'].map((tech) => (
+              {['Python', 'JavaScript', 'CSS', 'RDBM', 'EDA'].map((tech) => (
                 <span 
                   key={tech} 
                   className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-gray-300 text-sm hover:bg-white/10 hover:border-blue-500/50 transition-all duration-300 cursor-default"
