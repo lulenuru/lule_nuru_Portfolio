@@ -28,10 +28,10 @@ export const Navbar = () => {
         <div className="flex justify-between items-center">
           <a href="#home" className="flex items-center group">
             <div className="relative">
-              <Code2 className={`h-8 w-8 transition-colors ${scrolled ? 'text-blue-600' : 'text-white'} group-hover:text-blue-500`} />
+              {/* <Code2 className={`h-8 w-8 transition-colors ${scrolled ? 'text-blue-600' : 'text-white'} group-hover:text-blue-500`} /> */}
               <div className="absolute inset-0 bg-blue-500 blur-xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
             </div>
-            <span className={`ml-2 text-xl font-bold transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>Portfolio</span>
+            <span className={`ml-2 text-xl font-bold transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>Lule Nuru</span>
           </a>
 
           <div className="hidden md:flex space-x-1">
