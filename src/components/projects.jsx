@@ -112,10 +112,7 @@ export const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6">
-            {/* <Code2 className="h-4 w-4 text-blue-400" /> */}
-            {/* <span className="text-blue-300 text-sm font-medium">Portfolio</span> */}
-          </div>
+         
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-100">
             Featured Projects
           </h2>
